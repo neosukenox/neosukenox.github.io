@@ -121,6 +121,7 @@ footer {
   .portfolio{
     display: flex;
     justify-content: center;
+    align-items: center;
   }
   .carousel {
     width:800px;
