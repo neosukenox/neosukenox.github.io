@@ -34,15 +34,15 @@
     </header>
     <nav>
       <div class="sidebar">
-        <a href="#summary" class="active">Perfil </a>
-        <a href="#education" class="passive">Educación</a>
-        <a href="#experience" class="active"> Experience</a>
-        <a href="#porfolio" class="passive">Portfolio </a>
+        <a href="#perfil" class="active">Perfil </a>
+        <a href="#educacion" class="passive">Educación</a>
+        <a href="#experiencia" class="active"> Experience</a>
+        <a href="#portafolio" class="passive">Portfolio </a>
       </div>
     </nav>
     <section>
       <div class="content">
-        <h2 id="summary">Perfil</h2>
+        <h2 id="perfil">Perfil</h2>
         <p>
           Lorem ipsum dolor sit amet adipiscing bibendum sem orci tempus aliquet
           gravida, orci amet iaculis aptent blandit quam accumsan donec in
@@ -81,8 +81,8 @@
           aliquam curae vivamus purus egestas ligula tincidunt nullam.
         </p>
 
-        <h2 id="education">Education</h2>
-        <ul class="education">
+        <h2 id="educacion">Education</h2>
+        <ul class="educacion">
           <li>
             2020 - Universidad del Museo Social Argentino -
             <strong>Licenciada en Artes Visuales </strong>
@@ -99,19 +99,20 @@
             <strong>BACHILLER EN ARTE - ARTES VISUALES</strong>
           </li>
         </ul>
-        <h2 id="experience">Experiencia</h2>
+        <h2 id="experiencia">Experiencia</h2>
         <ul>
           <li></li>
           <li></li>
           <li></li>
         </ul>
-        <h2 id="porfolio">Portafolio</h2>
-
-        <!--
+        <h2 id="portafolio">Portafolio</h2>
+       
+        <div class="portfolio">
+        
       
         <div
           id="carouselWithCaptions"
-          class="carousel slide"
+          class="carousel carousel-dark slide"
           data-bs-ride="carousel"
         >
           <ol class="carousel-indicators">
@@ -131,10 +132,20 @@
               class="active"
               aria-current="true"
             ></li>
+            <li
+            data-bs-target="#carouselWithCaptions"
+            data-bs-slide-to="3"
+            class=""
+          ></li>
+          <li
+          data-bs-target="#carouselWithCaptions"
+          data-bs-slide-to="4"
+          class="" 
+        ></li>
           </ol>
           <div class="carousel-inner">
             <div class="carousel-item">
-              <img src="src_img/p1.jpeg" class="d-block w-100" alt="Slide 1" />
+              <img src="src_img/p1.jpg" class="d-block w-100" alt="Slide 1" />
               <div class="carousel-caption d-none d-sm-block">
                 <h5>First slide label</h5>
                 <p>
@@ -143,16 +154,36 @@
               </div>
             </div>
             <div class="carousel-item">
-              <img src="src_img/p2.png" class="d-block w-100" alt="Slide 2" />
+              <img src="src_img/p2.jpg" class="d-block w-100" alt="Slide 2" />
               <div class="carousel-caption d-none d-sm-block">
                 <h5>Second slide label</h5>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
               </div>
             </div>
             <div class="carousel-item active">
-              <img src="src_img/p3.png" class="d-block w-100" alt="Slide 3" />
+              <img src="src_img/p3.jpg" class="d-block w-100" alt="Slide 3" />
               <div class="carousel-caption d-none d-sm-block">
                 <h5>Third slide label</h5>
+                <p>
+                  Praesent commodo cursus magna, vel scelerisque nisl
+                  consectetur.
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="src_img/p4.jpg" class="d-block w-100" alt="Slide 4" />
+              <div class="carousel-caption d-none d-sm-block">
+                <h5>Fourth slide label</h5>
+                <p>
+                  Praesent commodo cursus magna, vel scelerisque nisl
+                  consectetur.
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="src_img/p5.jpg" class="d-block w-100" alt="Slide 5" />
+              <div class="carousel-caption d-none d-sm-block">
+                <h5>Fifth slide label</h5>
                 <p>
                   Praesent commodo cursus magna, vel scelerisque nisl
                   consectetur.
@@ -178,7 +209,8 @@
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
           </a>
-        </div>-->
+        </div>
+      </div>
       </div>
     </section>
     <button onclick="goTop()" id="top">&#8593</button>
@@ -191,7 +223,7 @@
         <a href="https://www.instagram.com/kuwunee/" target="_blank"g
           ><i class="fab fa-instagram"></i
         ></a>
-        <a href="https://www.twitter.com/" target="_blank"
+        <a href="https://twitter.com/Kuwunee_art/" target="_blank"
           ><i class="fab fa-twitter"></i
         ></a>
         <a href="https://www.linkedin.com/" target="_blank"

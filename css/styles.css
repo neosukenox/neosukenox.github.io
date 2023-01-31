@@ -116,6 +116,19 @@ footer {
   color: #51065e;
 }
 
+
+@media screen and (min-width: 800px ){
+  .portfolio{
+    display: flex;
+    justify-content: center;
+  }
+  .carousel {
+    width:800px;
+
+  }
+}
+
+
 @media screen and (max-width: 750px) {
   .sidebar {
     width: 100%;
