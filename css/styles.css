@@ -1,0 +1,154 @@
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.head {
+  background-color: #f0b4d9;
+  padding: 30px;
+  font-family: "Roboto Slab", serif;
+  text-align: center;
+}
+.pic {
+  width: 15em;
+}
+
+body {
+  margin: 0;
+}
+
+
+
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 10%;
+  background-color: #f0b4d9;
+  position: fixed;
+  left:0;
+  overflow: hidden;
+}
+
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 5%;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.sidebar a.active {
+  background-color: #9d0993;
+  color: white;
+}
+
+.sidebar a.passive {
+  background-color: #e475df;
+  color: white;
+}
+
+.sidebar a:hover:not(.active) {
+  background-color: #6e0982;
+  color: white;
+}
+.sidebar a:hover:not(.passive) {
+  background-color: #360232;
+  color: white;
+}
+
+div.content {
+  margin: 2% 2% 2% 15%;
+  padding: 3%;
+  display: block;
+  border: black;
+}
+
+#top {
+  display: none;
+  position: fixed;
+  bottom: 2em;
+  right: 1em;
+  z-index: 99;
+  font-size: 2em;
+  border: none;
+  outline: none;
+  background-color: palevioletred;
+  color: white;
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 15px;
+}
+
+#top:hover {
+  background-color: purple;
+}
+
+.social-icons {
+  font-size: 2em;
+  cursor: pointer;
+  display: inline;
+}
+
+footer {
+  background-color: #808080;
+  text-align: center;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 3em;
+
+}
+
+.fa-facebook,
+.fa-instagram,
+.fa-twitter,
+.fa-linkedin,
+.fa-twitch {
+  color: black;
+}
+
+.fa-facebook:hover,
+.fa-instagram:hover,
+.fa-twitter:hover,
+.fa-linkedin:hover,
+.fa-twitch:hover {
+  color: #51065e;
+}
+
+@media screen and (max-width: 750px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {
+    float: left;
+    text-align: center;
+  }
+  div.content {
+    margin-left: 0;
+  }
+  
+  .pic {
+    width: 80%;
+  }
+  header {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+
+  }
+  .social-icons {
+    font-size: 1em;
+
+  }
+  footer {
+    height: 1.5em;
+  }
+}
