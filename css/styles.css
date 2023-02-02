@@ -1,24 +1,62 @@
 * {
   box-sizing: border-box;
   scroll-behavior: smooth;
+  /*border: black solid;*/
+}
+header{
+  background-color: #f0b4d9;
+  display: block;
 }
 
 .head {
-  background-color: #f0b4d9;
   padding: 30px;
   font-family: "Roboto Slab", serif;
-  text-align: center;
+  text-align: right;
+  display: flex;
+  align-items: center;
+  
 }
+.t_head{
+  padding: 2%;
+}
+
+h2{
+  font-family: "Roboto Slab",serif;
+  font-size: 30px;
+  font-weight: bolder;
+}
+.c_pic{
+  display: inline-block;
+  text-align: right;
+  }
 .pic {
+  border-radius: 50%;
   width: 15em;
+  border: 10px purple solid;
+}
+
+.p_info{
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 2%;
+  font-size: larger;
+  font-weight: bolder;
+  align-items: center;
+  text-decoration: none!important;  
+}
+
+a{
+  color: black;
+}
+a:hover{
+  color: #be25b1;
 }
 
 body {
   margin: 0;
+  background-color: #eacade;
 }
-
-
-
 .sidebar {
   margin: 0;
   padding: 0;
@@ -56,11 +94,12 @@ body {
   color: white;
 }
 
+
 div.content {
-  margin: 2% 2% 2% 15%;
+  margin: 2% 2% 2% 10%;
   padding: 3%;
   display: block;
-  border: black;
+  
 }
 
 #top {
@@ -100,22 +139,20 @@ footer {
 
 }
 
-.fa-facebook,
-.fa-instagram,
-.fa-twitter,
-.fa-linkedin,
-.fa-twitch {
+.ico {
   color: black;
 }
 
-.fa-facebook:hover,
-.fa-instagram:hover,
-.fa-twitter:hover,
-.fa-linkedin:hover,
-.fa-twitch:hover {
+.ico:hover {
   color: #51065e;
 }
 
+.carousel-caption{
+  border: black solid 3px;
+  font-size: large;
+  background-color: rgba(255, 255, 255, 0.462);
+
+}
 
 @media screen and (min-width: 800px ){
   .portfolio{
@@ -130,7 +167,7 @@ footer {
 }
 
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 950px) {
   .sidebar {
     width: 100%;
     height: auto;
@@ -149,10 +186,38 @@ footer {
   }
   header {
     text-align: center;
+    display: block;
+  }
+  
+  .head {
+    padding: 30px;
+    font-family: "Roboto Slab", serif;
+    text-align: center;
+    display: block;
+    align-items: center;
+  }
+  
+  h2{
+    font-family: "Roboto Slab",serif;
+    font-size: 30px;
+    font-weight: bolder;
+  }
+  .c_pic{
+    text-align: center;
+    }
+
+  
+  .p_info{
+    padding: 4%;
+    font-size: larger;
+    font-weight: bolder;
+    display: inline-block;
+    position: inherit;
+
   }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 750px) {
   .sidebar a {
     text-align: center;
     float: none;
@@ -164,5 +229,10 @@ footer {
   }
   footer {
     height: 1.5em;
+  }
+  .info{
+    text-align: center;
+    font-size: smaller;
+    padding: 3px;
   }
 }
