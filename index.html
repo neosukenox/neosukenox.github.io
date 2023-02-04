@@ -90,18 +90,20 @@
     </nav>
     <section>
       <div class="content">
-        <h2 id="perfil">Perfil</h2>
+        <h2 id="perfil" class="category">Perfil<input type="button" value="-" class="show_hide" id="btn1" onclick="hideCategory2('cat1','btn1')"></h2>
+        
         <hr />
-        <p>
+        <p id="cat1">
           Me considero una persona responsable, creativa. Con buena
           predisposición para realizar tareas y trabajar en equipo. Con
           capacidad de aprendizaje rápido e interesada en sumar experiencia
           laboral y artistica.
         </p>
 
-        <h2 id="educacion">Educación</h2>
+        <h2 id="educacion">Educación<input type="button" value="-" class="show_hide" id="btn2" onclick="hideCategory2('cat2','btn2')"></h2>
+        
         <hr />
-        <ul class="educacion">
+        <ul class="educacion" id="cat2">
           <li>
             2020 - Universidad del Museo Social Argentino -
             <strong>Licenciada en Artes Visuales </strong>
@@ -118,9 +120,10 @@
             <strong>BACHILLER EN ARTE - ARTES VISUALES</strong>
           </li>
         </ul>
-        <h2 id="experiencia">Experiencia</h2>
+        <h2 id="experiencia">Experiencia <input type="button" value="-" class="show_hide" id="btn3" onclick="hideCategory2('cat3','btn3')"></h2>
+        
         <hr />
-        <ul>
+        <ul id="cat3">
           <li>2022 - Actualidad - Comisiones de arte</li>
           <li>
             2020 - 2022 - Talleres de Arte para personas mayores - Modalidad:
@@ -128,10 +131,11 @@
           </li>
           <li>2017 - 2019 - Guia Museo Nacional de Bellas Artes</li>
         </ul>
-        <h2 id="portafolio">Portafolio</h2>
+        <h2 id="portafolio">Portafolio<input type="button" value="-" class="show_hide" id="btn4" onclick="hideCategory2('carouselWithCaptions','btn4')"></h2>
+        
         <hr />
 
-        <div class="portfolio">
+        <div class="portfolio"id="cat4">
           <div
             id="carouselWithCaptions"
             class="carousel carousel-dark slide"
@@ -242,13 +246,15 @@
           </div>
         </div>
         <br /><br />
-        <h2 id="contacto">Contacto</h2>
+        <h2 id="contacto" >Contacto <input type="button" value="-" class="show_hide"id="btn5" onclick="hideCategory2('cat5','btn5')"></h2>
+       
         <hr />
         <!---Empty action for now and method get for easy testing--->
         <form
           action=""
           method="get"
           onsubmit="alert('Gracias por la consulta, pronto estamos en contacto')"
+          id="cat5"
         >
           <div class="row">
             <div class="col-md-6">

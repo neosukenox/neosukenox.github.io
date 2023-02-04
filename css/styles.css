@@ -19,7 +19,19 @@ header{
 .t_head{
   padding: 2%;
 }
+.show_hide{
+  background-color: #df89f0;
+  border: none;
+  border-radius: 20%;
 
+  float:right;
+  
+}
+
+.show_hide:hover{
+    background-color: #6e0982;
+    color: white;
+}
 h2{
   font-family: "Roboto Slab",serif;
   font-size: 30px;
