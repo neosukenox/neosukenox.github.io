@@ -37,7 +37,7 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <header>    
+    <header>
       <div class="head">
         <div class="t_head col">
           <h1>Pamela S. Marano</h1>
@@ -48,29 +48,43 @@
         </div>
       </div>
       <div class="p_info col">
-        <p class="info"><i class="fa-regular fa-id-card"></i> DNI: 43.345.679 <br>
-          <i class="fa-regular fa-calendar"></i> Fecha de nacimiento: 10/02/1995<br>
-          <i class="fa-regular fa-heart"></i> Estado Civil: Soltera<br>
-        <i class="fa-solid fa-globe"></i> Nacionalidad: Argentina<br>
-        <a href="https://www.google.com.ar/maps/place/Av.+Jujuy+3000" target="_blank"style="text-decoration:none;"
-
-        >
-          <i class="fa-solid fa-location-dot"></i> Direccion: Av. Jujuy 3000<br>
-        <a href="mailto:pammarano@gmail.com" target="_blank"style="text-decoration:none;"
-
-        >
-          <i class="fa-regular fa-envelope"></i> Email: pammarano@hotmail.com<br>
-        <a href="https://wa.me/+5491166668888" target="_blank"style="text-decoration:none;" color:black;
-
-        ><i class="fa-brands fa-whatsapp"></i> Cel: +54 9 11 6666-8888</a></p>
+        <p class="info">
+          <i class="fa-regular fa-id-card"></i> DNI: 43.345.679 <br />
+          <i class="fa-regular fa-calendar"></i> Fecha de nacimiento:
+          10/02/1995<br />
+          <i class="fa-regular fa-heart"></i> Estado Civil: Soltera<br />
+          <i class="fa-solid fa-globe"></i> Nacionalidad: Argentina<br />
+          <a
+            href="https://www.google.com.ar/maps/place/Av.+Jujuy+3000"
+            target="_blank"
+            style="text-decoration: none"
+          >
+            <i class="fa-solid fa-location-dot"></i> Direccion: Av. Jujuy
+            3000</a
+          ><br />
+          <a
+            href="mailto:pammarano@gmail.com"
+            target="_blank"
+            style="text-decoration: none"
+            ><i class="fa-regular fa-envelope"></i> Email:
+            pammarano@hotmail.com</a
+          ><br />
+          <a
+            href="https://wa.me/+5491166668888"
+            target="_blank"
+            style="text-decoration: none"
+            color:black
+            ><i class="fa-brands fa-whatsapp"></i> Cel: +54 9 11 6666-8888
+          </a>
+        </p>
       </div>
     </header>
     <nav>
       <div class="sidebar">
         <a href="#perfil" class="active">Perfil </a>
         <a href="#educacion" class="passive">Educación</a>
-        <a href="#experiencia" class="active"> Experience</a>
-        <a href="#portafolio" class="passive">Portfolio </a>
+        <a href="#experiencia" class="active"> Experiencia</a>
+        <a href="#portafolio" class="passive">Portafolio </a>
         <a href="#contacto" class="active">Contacto</a>
       </div>
     </nav>
@@ -230,7 +244,12 @@
         <br /><br />
         <h2 id="contacto">Contacto</h2>
         <hr />
-        <form>
+        <!---Empty action for now and method get for easy testing--->
+        <form
+          action=""
+          method="get"
+          onsubmit="alert('Gracias por la consulta, pronto estamos en contacto')"
+        >
           <div class="row">
             <div class="col-md-6">
               <label for="c_name">Nombre</label>
@@ -238,7 +257,7 @@
                 type="text"
                 class="form-control"
                 id="c_name"
-                placeholder="Jane"
+                placeholder="Nombre"
               />
             </div>
             <div class="col-md-6">
@@ -247,39 +266,48 @@
                 type="text"
                 class="form-control"
                 id="c_lname"
-                placeholder="Doe"
+                placeholder="Apellido"
               />
             </div>
           </div>
           <div class="row">
-          <div class="col-md-6">
-            <label for="c_mail">Email address</label>
-            <input
-              type="email"
-              class="form-control"
-              id="c_mail"
-              placeholder="name@example.com"
-            />
-          </div>
+            <div class="col-md-6">
+              <label for="c_mail">Email address</label>
+              <input
+                type="email"
+                class="form-control"
+                id="c_mail"
+                placeholder="nombre@ejemplo.com"
+                required
+              />
+            </div>
 
-          <div class="col-md-6">
-            <label for="motive">Motivo de contacto</label>
-            <select class="form-control" id="motive">
-              <option>Presupuesto comision</option>
-              <option>Oferta Laboral</option>
-              <option>Otros (detallar)</option>
-            </select>
+            <div class="col-md-6">
+              <label for="motive">Motivo de contacto</label>
+              <select class="form-control" id="motive">
+                <option>Presupuesto comision</option>
+                <option>Oferta Laboral</option>
+                <option>Otros (detallar)</option>
+              </select>
+            </div>
           </div>
-        </div>
           <div class="form-group">
             <label for="details">Detalles de la consulta</label>
-            <textarea class="form-control" id="details" rows="3"></textarea>
+            <textarea
+              class="form-control"
+              id="details"
+              rows="3"
+              required
+            ></textarea>
           </div>
+          <br />
+          <button class="btn btn-secondary sent">Enviar</button>
         </form>
-        
       </div>
     </section>
-    <button onclick="goTop()" id="top"><i class="fa-solid fa-angle-up"></i></button>
+    <button onclick="goTop()" id="top">
+      <i class="fa-solid fa-angle-up"></i>
+    </button>
 
     <footer>
       <div class="social-icons">

@@ -154,6 +154,11 @@ footer {
 
 }
 
+.sent{
+    background-color: rgb(162, 71, 86);
+    float: right;
+}
+
 @media screen and (min-width: 800px ){
   .portfolio{
     display: flex;
